@@ -1,0 +1,85 @@
+section { 
+    padding: 2em;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact-h2:before, .contact-h2:after {
+    content: "";
+    flex: 1;
+    border-top: 7px double #ED1C22;
+}
+.contact-h2:before { margin-right: .3em; }
+.contact-h2:after { margin-left: .3em; }
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+    float: left;
+    margin: 2em;
+}
+
+/* CONTACT CARDS */
+
+.contact-deck {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.contact-detail a {
+    text-decoration: none;
+    color: unset;
+}
+.contact-detail a:hover { color: #ED1C22; }
+
+
+.contact-card { 
+    width: fit-content;
+    padding: 1em;
+}
+
+.contact-name {
+    color: #ED1C22;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+.contact-detail {
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.con-icon {
+    width: 26px;
+    margin-right: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    .contact-deck { 
+        display: inline;
+        text-align: center;
+    }
+
+    .contact-card {
+        margin: 0 auto;
+    }
+}

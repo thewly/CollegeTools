@@ -13,5 +13,11 @@ module.exports = {
         .findOne({ active: true })
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json)
-    }
+    },
+    getVenues: function(req, res) {
+        db.Venues
+          .find(req.query)
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err));
+      }
 }

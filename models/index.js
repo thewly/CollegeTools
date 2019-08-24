@@ -1,3 +1,8 @@
 module.exports = {
-    Venues: require("./venues")
+    Venues: require("./venues"),
+    Tables: require("./tables"),
+    NewBlog: require("./blog"),
+    User: require("./user"),
+    Banners: require("./banners")
   };
+    

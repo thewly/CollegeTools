@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Nav.css"
+import "./style.css"
 
 function Nav() {
     return (
 
-        <nav className="navbar navbar-expand-lg bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="/">
-                <img src="assets/img/IGTBOK-Brand-Logo.png" height="70" alt="It's Going To Be OK" />
+                <img src="assets/img/IGTBOK-Brand-Logo.png" height="40" alt="It's Going To Be OK" />
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -28,6 +28,9 @@ function Nav() {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/contact" data-hover="Contact">Contact</Link>
+                    </li>
+                <li className="nav-item">
+                        <Link className="nav-link" to="/login" data-hover="Login">Login</Link>
                     </li>
                 </ul>
             </div>
